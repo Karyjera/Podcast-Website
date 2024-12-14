@@ -1,0 +1,380 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+color: white;
+}
+
+:root {
+    --thema-kleur: #2DFF23;
+}
+
+body {
+font-family: Bebas Neue, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+background: #000000;
+text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: Bebas Neue, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%;
+width: 60vh;
+}
+
+
+/* Navigatie-menu */
+.navbar {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.navbar a {
+    padding: 10px 25px;
+    display: block;
+    transition: 0.6s;
+}
+
+.navbar .menu ul {
+    display: flex;
+    font-size: 25px;
+}
+
+.navbar .menu ul li a:hover,
+.navbar .menu ul li a:focus {
+color: var(--thema-kleur)
+}
+
+.navbar .menu ul li a:after {
+    content: '' ;
+    height: 2px;
+    width: 100%;
+    background: #2DFF23;
+    display: block;
+    opacity: 0;
+    transition: all 0.6s;
+    pointer-events: none;
+}
+
+.navbar .menu ul li a:hover::after,
+.navbar .menu ul li a:focus::after {
+    opacity: 1;
+}
+
+.container {
+width: 100%; 
+position: absolute;
+top: 600px;
+display: flex;
+justify-content: space-between;
+}
+
+.box {
+    width: 27em;
+    height: 5px;
+    background-color: #118400;
+    margin: 50px;
+    max-width: 100%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.boxmid {
+    height: 100px;
+    width: 12em;
+    background-color: black;
+    max-width: 100%;
+    font-size: 40pt;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 600px;
+    letter-spacing: 10px;
+    color: #0ef;
+text-shadow: 0 0 10px #0ef;
+animation: colorful 6s infinite;
+}
+
+.boxmid span {
+    color: white;
+    text-shadow: none;
+}
+
+@keyframes colorful {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.boxmid::before {
+content: '' ;
+position: absolute;
+background: black;
+width: 220px;
+height: 70px;
+border-left: 1px solid white;
+left: 0;
+animation: typing 1.5s steps(7) infinite alternate;
+margin-left: 240px;
+}
+
+@keyframes typing {
+    100% {
+        left: 75%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+#trailer {
+    max-width: 100%;
+    width: 1000px;
+    margin-top: 6em;
+    box-shadow:0 0 1em darkgray;
+}
+
+.container4 {
+    display: flex;
+    margin: auto;
+    width: 40%;
+    margin-top: 11em;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.container4 p{
+    margin: 1em;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container4 p span{
+    color: #2DFF23;
+}
+
+.container4 a {
+    margin: 1em;
+    background-color: red;
+    height: 80px;
+    width: 250px;
+  cursor: pointer;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 40px;
+  align-content: center;
+  border-radius: 9px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px black;
+  box-shadow: 0 0 1em 0.1em darkred;
+  transition: all 0.3s ease-out;
+}
+
+.container4 a:hover {
+    box-shadow: 0 0 1em 0.3em white;
+    transform: scale(1.2);
+}
+
+.aliens {
+    height: 20em;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.alienL {
+transform: scale(1.8);
+}
+
+.alienR {
+    transform: scale(2.5);
+}
+
+footer {
+    padding: 1em;
+    border-top: 2px solid white;
+    margin-top: 15em;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+footer img {
+    padding: 1em;
+    transition: all 0.5s ease;
+}
+
+footer img:hover {
+transform: scale(1.5);
+}
+
+footer h2 {
+    color: white;
+    justify-content: center;
+    padding: 2em;
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+
+.afboxmid {
+    height: 100px;
+    width: 12em;
+    background-color: black;
+    font-size: 40pt;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 600px;
+    letter-spacing: 10px;
+    color: white;
+text-shadow: 0 0 6px var(--thema-kleur);
+}
+
+.aflbox {
+    display: flex;
+    margin-bottom: 20em;
+    justify-content: center;
+    height: 30em;
+}
+
+.aflbox img {
+    transform: scale(1.1);
+    max-width: 100%;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+article p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.episode {
+    background-color: darkgreen;
+    height: 15em;
+    width: 60em;
+    margin: auto;
+    margin-bottom: 10em;
+    max-width: 100%;
+}
+
+article img {
+    max-width: 250px;
+    float: left;
+    margin: 1em;
+}
+
+.textbox {
+text-align: left;
+padding: 25px;
+}
+
+audio {
+    width: 150px;
+    transform: scale(0.8);
+    margin-top: 10px;
+}
+
+.overonstemp {
+    display: flex;
+    margin-bottom: 20em;
+    justify-content: space-between;
+    height: 30em;
+    max-width: 100%;
+}
+
+.icognitoL {
+    transform: scale(1.05);
+}
+
+.icognitoR {
+    transform: scale(1.3);
+}
+
+.overonsinfo {
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.overonsinfo img {
+    transform: scale(0.8);
+}
+
+.overonstext {
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+}
+
+.amaroinfo p {
+font-size: 30px ;
+}
+
+.basinfo p {
+    font-size: 30px ;
+}
+
+.kasperinfo p {
+    font-size: 30px ;
+}
+
+.kasperinfo h2 {
+    font-size: 60px ;
+}
+
+.amaroinfo {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.kasperinfo {
+    margin-right: 50px;
+}
+
+.basinfo {
+    margin-right: 50px;
+}
+
+.amaroinfo h2 {
+    color: green;
+}
+
+.basinfo h2 {
+    color: green;
+}
+
+.kasperinfo h2 {
+    color: green;
+}
